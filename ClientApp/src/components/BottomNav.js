@@ -27,8 +27,8 @@ export class BottomNav extends Component {
     render() {
         return (
 
-            <header>
-                <Navbar className="navbar-expand-sm navbar-toggleable-sm bg-dark border-bottom box-shadow mb-3" container light>
+            <div>
+                <Navbar className="BottomNav navbar-expand-sm navbar-toggleable-sm bg-dark" container light>
                     <NavbarBrand tag={Link} to="/"><img className="Icon" src={ fb } alt="Facebook" width='30'></img></NavbarBrand>
                     <NavbarBrand tag={Link} to="/"><img className="Icon" src={ line } alt="Facebook" width='30'></img></NavbarBrand>
                     <NavbarBrand tag={Link} to="/"><img className="Icon" src={ ig } alt="Facebook" width='30'></img></NavbarBrand>
@@ -47,7 +47,7 @@ export class BottomNav extends Component {
                         </ul>
                     </Collapse>
                 </Navbar>
-            </header>
+            </div>
         );
     }
 }
